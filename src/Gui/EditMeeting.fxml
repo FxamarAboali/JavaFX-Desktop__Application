@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="paneMeeting" prefHeight="424.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditMeetingController">
+    <children>
+        <Label layoutX="31.0" layoutY="26.0" text="Edit Meeting" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+       <Label layoutX="334.0" layoutY="79.0" text="Title :">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="315.0" layoutY="245.0" text="Location : ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="190.0" text="Issues :">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="134.0" text="Goal :">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="title" layoutX="488.0" layoutY="69.0" prefHeight="41.0" prefWidth="323.0" />
+            <TextField fx:id="issues" layoutX="487.0" layoutY="179.0" prefHeight="44.0" prefWidth="323.0" />
+            <TextField fx:id="goal" layoutX="488.0" layoutY="126.0" prefHeight="38.0" prefWidth="323.0" />
+            <TextField fx:id="location" layoutX="488.0" layoutY="236.0" prefHeight="40.0" prefWidth="323.0" />
+        <Pane layoutX="563.0" layoutY="335.0" prefHeight="75.0" prefWidth="246.0">
+         <children>
+              <Button layoutX="135.0" layoutY="23.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="13.0" prefWidth="95.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Cancel" />
+              <Button fx:id="back" layoutX="11.0" layoutY="23.0" mnemonicParsing="false" onAction="#Edit" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Edit" />
+         </children></Pane>
+
+    </children>
+</Pane>

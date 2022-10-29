@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="424.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DailyScrumController">
+   <children>
+      <Label layoutX="31.0" layoutY="26.0" text="ALL FILES" textFill="#626365">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview1" layoutX="14.0" layoutY="75.0" prefHeight="350.0" prefWidth="808.0" stylesheets="@../Css/fullpackstyling.css">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="123.0" text="File Name" />
+            <TableColumn fx:id="dcreation" prefWidth="137.0" text="Creation Date" />
+            <TableColumn fx:id="tcreation" prefWidth="129.0" text="Creation Time" />
+            <TableColumn fx:id="dmodify" prefWidth="132.0" text="Modified Date" />
+            <TableColumn fx:id="tmodify" prefWidth="146.0" text="Modified Time" />
+            <TableColumn fx:id="username" prefWidth="146.0" text="Created By" />
+         </columns>
+      </TableView>
+      <TextField fx:id="filterField" alignment="TOP_CENTER" layoutX="841.0" layoutY="24.0" onAction="#FiltredDisplay" promptText="Data searching ..." style="-fx-text: #000000;" styleClass="text" stylesheets="@../Css/fullpackstyling.css" />
+      <Label layoutX="735.0" layoutY="26.0" text="Serach Box" textFill="#626365">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="856.0" layoutY="75.0" text="Actions" textFill="#626365">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="928.0" layoutY="130.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#openDailyS" prefHeight="33.0" prefWidth="101.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Open" />
+            <Button mnemonicParsing="false" onAction="#modifyDailyS" prefHeight="33.0" prefWidth="104.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Modify" />
+            <Button mnemonicParsing="false" onAction="#deleteDailyS" prefHeight="33.0" prefWidth="103.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#deleteAllDaily" prefHeight="33.0" prefWidth="101.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Delete All" />
+            <Button mnemonicParsing="false" onAction="#pdfDaily" prefHeight="33.0" prefWidth="105.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Export PDF" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

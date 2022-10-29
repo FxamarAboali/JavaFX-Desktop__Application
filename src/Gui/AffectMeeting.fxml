@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="424.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AffectMeetingController">
+    <children>
+        <Label layoutX="31.0" layoutY="26.0" text="Affect Meeting" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    
+        <Label layoutX="308.0" layoutY="158.0" text="Participants :">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+        
+          <Label layoutX="308.0" layoutY="216.0" text="Meeting :">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+        
+        
+       
+       
+        <ComboBox fx:id="user" layoutX="473.0" layoutY="151.0" prefHeight="36.0" prefWidth="253.0" />
+        <ComboBox fx:id="meeting" layoutX="473.0" layoutY="203.0" prefHeight="38.0" prefWidth="253.0" />
+
+      
+       
+       <Button layoutX="427.0" layoutY="314.0" mnemonicParsing="false" onAction="#CreateNewMeeting" prefHeight="33.0" prefWidth="146.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Affect " />
+
+    </children>
+</Pane>

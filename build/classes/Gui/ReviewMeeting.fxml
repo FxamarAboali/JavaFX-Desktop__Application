@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="424.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReviewMeetingController">
+    <children>
+        <Label layoutX="31.0" layoutY="26.0" text="ALL Review Meetings" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="meetings" layoutX="14.0" layoutY="75.0" prefHeight="350.0" prefWidth="657.0" stylesheets="@../Css/fullpackstyling.css">
+            <columns>
+                <TableColumn fx:id="title" prefWidth="123.0" text="Meeting Title" />
+                <TableColumn fx:id="date" prefWidth="137.0" text="Creation Date" />
+                <TableColumn fx:id="goal" prefWidth="129.0" text="Meeting Goal" />
+                <TableColumn fx:id="issues" prefWidth="132.0" text="Meeting Issues" />
+                <TableColumn fx:id="type" prefWidth="132.0" text="Type" />
+                <TableColumn fx:id="duration" prefWidth="146.0" text="Meeting Duration" />
+                <TableColumn fx:id="location" prefWidth="146.0" text="Meeting Location" />
+                <TableColumn fx:id="project" prefWidth="146.0" text="Relative to" />
+                <TableColumn fx:id="organizedBy" prefWidth="146.0" text="organizedBy" />
+  
+            </columns>
+        </TableView>
+        <TextField fx:id="filterField" alignment="TOP_CENTER" layoutX="655.0" layoutY="24.0" onAction="#FiltredDisplay" promptText="Data searching ..." style="-fx-text: #000000;" styleClass="text" stylesheets="@../Css/fullpackstyling.css" />
+        <Label layoutX="536.0" layoutY="26.0" text="Search Box" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Pane layoutX="693.0" layoutY="121.0" prefHeight="293.0" prefWidth="371.0">
+            <children>
+                <Button layoutX="156.0" layoutY="35.0" mnemonicParsing="false" onAction="#openDailyS" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Open" />
+                <Button layoutX="136.0" layoutY="180.0" mnemonicParsing="false" onAction="#deleteAllDaily" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Clean Table" />
+                <Button layoutX="151.0" layoutY="84.0" mnemonicParsing="false" onAction="#modifyDailyS" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Modify" />
+                <Button layoutX="153.0" layoutY="130.0" mnemonicParsing="false" onAction="#deleteReview" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Delete" />
+                <Button layoutX="211.0" layoutY="232.0" mnemonicParsing="false" onAction="#pdfDaily" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Export PDF" />
+                <Button layoutX="80.0" layoutY="232.0" mnemonicParsing="false" onAction="#statDaily" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="View Stat" />
+            </children>
+        </Pane>
+        <Label layoutX="686.0" layoutY="75.0" text="Actions" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

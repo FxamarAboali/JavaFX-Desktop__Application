@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="parentContainer" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="container" prefHeight="540.0" prefWidth="780.0" style="-fx-background-color: #02030A;" styleClass="blue-bg" stylesheets="@../css/Stylesheet.css">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="360.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="250.0" fitWidth="700.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/unnamed.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="78.0" layoutX="31.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/blancTitan.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="getStartedButton" buttonType="RAISED" layoutX="339.0" layoutY="469.0" onAction="#open_login" prefHeight="30.0" ripplerFill="WHITE" styleClass="get-started-btn" text="GET STARTED" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="117.0" layoutY="364.0" prefHeight="51.0" prefWidth="222.0" text="Welcome to  " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="363.0" text="TITAN" textFill="#5494ba">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="438.0" layoutY="363.0" text="DesktopApp" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="423.0" text="Project management with SCRUM Methodology" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

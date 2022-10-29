@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderpane" prefHeight="857.0" prefWidth="1390.0" style="-fx-border-color: #33373C; -fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.SideBarPOController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="810.0" prefWidth="237.0" spacing="10.0" style="-fx-background-color: #33373C; -fx-background-radius: 0 20 0 0;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Pane prefHeight="64.0" prefWidth="240.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="153.0" layoutX="49.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/blancTitan.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#dashboard" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ; -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Dashboard">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-layout-dashboard@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#project" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Project">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-folder@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+           
+            
+             <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#meeting" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Meeting">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-folder@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+             <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#claim" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Claims">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-folder@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#task" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Task">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-task-finger-show@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#prodbacklog" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C;  -fx-text-fill: white;  " stylesheets="@../css/fullpackstyling.css" text="Product Backlogs">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-presentation-projector-screen-budget-analytics@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#sprints" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Sprints">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-performance-increase-2@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#document" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Document">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-paper-write@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#team" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Team">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/streamline-icon-team-idea@48x48.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="90.0" prefWidth="240.0" />
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#exit" onMouseClicked="#team" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #33373C ;  -fx-text-fill: white; " stylesheets="@../css/fullpackstyling.css" text="Logout">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/logout.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="1388.0" spacing="20.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="71.0" prefWidth="16.0" />
+            <Pane prefHeight="71.0" prefWidth="285.0" />
+            <Pane prefHeight="71.0" prefWidth="184.0" />
+            <Pane prefHeight="71.0" prefWidth="112.0" />
+     
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="754.0" prefWidth="1151.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="131.0" layoutY="32.0" prefHeight="25.0" prefWidth="245.0" promptText="Search Drive" style="-fx-background-color: #fffff;" styleClass="text" stylesheets="@../css/fullpackstyling.css" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="720.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_bell_20px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="764.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_help_20px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="806.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_settings_20px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="1038.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/user.png" />
+               </image>
+            </ImageView>
+            
+            
+            <Text fx:id="role" layoutX="1013.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCT OWNER" wrappingWidth="115.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

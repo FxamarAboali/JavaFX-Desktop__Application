@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="paneProject" prefHeight="424.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditProjectController">
+    <children>
+        <Label layoutX="31.0" layoutY="26.0" text="Edit Project" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+       <Label layoutX="334.0" layoutY="79.0" text="Ptoject Name :">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="135.0" text="Description : ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="332.0" layoutY="191.0" text="Deadline : ">
+               <font> 
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="254.0" text="Category : ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="303.0" text="Version : ">
+               <font> 
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+           
+           
+            <TextField fx:id="name" layoutX="489.0" layoutY="69.0" prefHeight="41.0" prefWidth="323.0" />
+            <TextField fx:id="description" layoutX="489.0" layoutY="124.0" prefHeight="44.0" prefWidth="323.0" />
+        <DatePicker fx:id="deadline" layoutX="490.0" layoutY="181.0" prefHeight="37.0" prefWidth="218.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" />
+        <TextField fx:id="category" layoutX="489.0" layoutY="231.0" prefHeight="44.0" prefWidth="323.0" />
+        <TextField fx:id="version" layoutX="489.0" layoutY="285.0" prefHeight="44.0" prefWidth="323.0" />
+        <Pane layoutX="563.0" layoutY="335.0" prefHeight="75.0" prefWidth="246.0">
+         <children>
+              <Button layoutX="135.0" layoutY="23.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="13.0" prefWidth="95.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Cancel" />
+              <Button fx:id="back" layoutX="11.0" layoutY="23.0" mnemonicParsing="false" onAction="#Edit" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Edit Project" />
+         </children></Pane>
+
+    </children>
+</Pane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="424.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewMeetingController">
+    <children>
+        <Label layoutX="31.0" layoutY="26.0" text="New Meeting" textFill="#626365">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    
+        <Label layoutX="82.0" layoutY="132.0" text="Title :">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+        
+          <Label layoutX="81.0" layoutY="186.0" text="Goal :">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+         <Label layoutX="82.0" layoutY="238.0" text="Issues :">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+         <Label layoutX="83.0" layoutY="286.0" text="Date : ">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+          <Label layoutX="592.0" layoutY="101.0" text="Time">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+         <Label layoutX="592.0" layoutY="154.0" text="Type : ">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="591.0" layoutY="205.0" text="Project : ">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+        
+        
+        <Label layoutX="592.0" layoutY="260.0" text="Location : ">
+            <font>
+                <Font name="Times New Roman" size="19.0" />
+            </font>
+        </Label>
+       
+      
+        
+       
+       
+        <TextField fx:id="title" layoutX="191.0" layoutY="122.0" prefHeight="41.0" prefWidth="323.0" stylesheets="@../Css/fullpackstyling.css" />
+        <TextField fx:id="issues" layoutX="191.0" layoutY="227.0" prefHeight="44.0" prefWidth="323.0" stylesheets="@../Css/fullpackstyling.css" />
+        <TextField fx:id="goal" layoutX="191.0" layoutY="178.0" prefHeight="38.0" prefWidth="323.0" stylesheets="@../Css/fullpackstyling.css" />
+        <DatePicker fx:id="date" layoutX="191.0" layoutY="280.0" prefHeight="37.0" prefWidth="218.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" />
+        <TextField fx:id="time" layoutX="716.0" layoutY="94.0" prefHeight="40.0" prefWidth="323.0" stylesheets="@../Css/fullpackstyling.css" />
+        <ComboBox fx:id="type" layoutX="716.0" layoutY="148.0" prefHeight="36.0" prefWidth="323.0" />
+        <ComboBox fx:id="project" layoutX="716.0" layoutY="197.0" prefHeight="38.0" prefWidth="323.0" />
+
+        <TextField fx:id="location" layoutX="716.0" layoutY="251.0" prefHeight="40.0" prefWidth="323.0" stylesheets="@../Css/fullpackstyling.css" />
+       
+       <Button layoutX="490.0" layoutY="374.0" mnemonicParsing="false" onAction="#CreateNewMeeting" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Create Meeting" />
+
+    </children>
+</Pane>

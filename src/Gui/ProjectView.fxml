@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="paneProject" prefHeight="920.0" prefWidth="980.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProjectViewController">
+   <children>
+      <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="80.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/scrum(1).png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="35.0" layoutY="302.0" prefHeight="554.0" prefWidth="900.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="878.0" spacing="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="319.0" styleClass="label2" stylesheets="@../Css/fullpackstyling.css" text="Project Name" />
+                  <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="398.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="66.0" prefWidth="900.0" spacing="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="316.0" styleClass="label2" stylesheets="@../Css/fullpackstyling.css" text="Description" />
+                  <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="395.89453125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="55.0" prefWidth="900.0" spacing="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="318.0" styleClass="label2" stylesheets="@../Css/fullpackstyling.css" text="Creation Date" />
+                  <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="382.89453125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="99.0" prefWidth="900.0" spacing="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="318.0" styleClass="label2" stylesheets="@../Css/fullpackstyling.css" text="Creation Time" />
+                  <Text fx:id="time" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="382.89453125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="55.0" prefWidth="900.0" spacing="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="318.0" styleClass="label2" stylesheets="@../Css/fullpackstyling.css" text="Category :" />
+                  <Text fx:id="category" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="382.89453125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="99.0" prefWidth="900.0" spacing="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="318.0" styleClass="label2" stylesheets="@../Css/fullpackstyling.css" text="Version :" />
+                  <Text fx:id="version" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="382.89453125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+          
+            <HBox alignment="TOP_RIGHT" prefHeight="56.0" prefWidth="987.0" spacing="50.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#exit" prefHeight="13.0" prefWidth="95.0" styleClass="button5" stylesheets="@../Css/fullpackstyling.css" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+   </children>
+</Pane>

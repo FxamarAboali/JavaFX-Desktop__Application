@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderpane" prefHeight="748.0" prefWidth="1148.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Dev.ProjectDevController">
+   <top>
+      <Pane prefHeight="295.0" prefWidth="1148.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="22.0" layoutY="39.0" text="Projects" textFill="#2262c6">
+               <font>
+                  <Font name="Gill Sans MT" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="105.0" text="QUICK ACCESS" textFill="#626365">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="4.0" layoutY="130.0" prefHeight="154.0" prefWidth="878.0" style="-fx-background-color: #fff; -fx-border-color: #fff;">
+               <content>
+                  <HBox prefHeight="148.0" prefWidth="873.0" spacing="10.0" style="-fx-background-color: #fff; -fx-border-color: #fff;">
+                     <children>
+                        <Pane prefHeight="123.0" prefWidth="139.0" style="-fx-background-color: #F0F2F8; -fx-background-radius: 5 30 5 5;">
+                           <children>
+                              <Button layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#AllProjects" styleClass="button2" stylesheets="@../Css/fullpackstyling.css">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/scrum(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Label layoutX="18.0" layoutY="107.0" text="All Projects" textFill="#2262c6">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                       
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="453.0" prefWidth="31.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="453.0" prefWidth="46.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="593.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.HomeController">
+       <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="962.0" spacing="20.0" style="-fx-background-color: #fff;">
+         <children>
+            <Pane prefHeight="71.0" prefWidth="16.0" />
+            <Label text="TITAN" textFill="#2262c6">
+               <font>
+                  <Font name="Gill Sans MT" size="24.0" />
+               </font>
+            </Label>
+            <JFXHamburger fx:id="hamburger" />
+            <Pane prefHeight="60.0" prefWidth="59.0" />
+            <TextField prefHeight="25.0" prefWidth="245.0" promptText="Search Drive" style="-fx-background-color: #fffff;" styleClass="text" stylesheets="@../css/fullpackstyling.css" />
+            <Pane prefHeight="60.0" prefWidth="59.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_bell_20px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_help_20px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_settings_20px.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="60.0" prefWidth="91.0" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_bulleted_list_20px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <JFXDrawer fx:id="drawer" layoutY="72.0" prefHeight="521.0" prefWidth="193.0" AnchorPane.leftAnchor="0.0" />
+      <Pane fx:id="panstage" layoutY="71.0" prefHeight="521.0" prefWidth="962.0" />
+   </children>
+</AnchorPane>
